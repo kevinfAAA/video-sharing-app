@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'profiles',
 ]
 
 MIDDLEWARE = [
@@ -152,3 +153,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Sign In Redirect
 LOGIN_REDIRECT_URL = 'index'
+
+# Additions to Sign Up Form
+ACCOUNT_SIGNUP_FORM_CLASS = 'profiles.forms.ProfileForm'
